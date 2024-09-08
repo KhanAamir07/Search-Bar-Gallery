@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+body {
+    background-color: rgb(236, 230, 219);
+}
+
+.container {
+    padding: 25px 10px;
+    text-align: center;
+}
+
+.container .heading {
+    font-size: 30px;
+    padding-bottom: 25px;
+}
+
+.container #search-box {
+    width: 600px;
+    border: 3px solid #000;
+    padding: 12px 15px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.container .image-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 30px;
+}
+
+.container .image-container .image {
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    border: 2px solid #000;
+    width: 350px;
+    border-radius: 5px;
+    animation: fadeIn .2s linear;
+}
+
+@keyframes fadeIn {
+    0% {
+        transform: scale(.5) translateY(-10px);
+        opacity: 0;
+    }
+}
+
+.container .image-container .image img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.container .image-container .image h3 {
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow:
+        2px 2px 4px #FF0000,
+        -2px -2px 4px #00FF00,
+        2px -2px 4px #0000FF,
+        -2px 2px 4px #FFFF00;
+    color: #FFFFFF;
+}
+
+footer {
+    background: #111;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+}
+
+footer span a {
+    color: crimson;
+    text-decoration: none;
+}
+
+footer span a:hover {
+    text-decoration: underline;
+    color: rgb(31, 255, 255);
+}
+
+footer {
+    display: block;
+}
+
+#footer {
+    display: block;
+}
+
+@keyframes rainbow {
+    0% {
+        color: red;
+    }
+
+    20% {
+        color: orange;
+    }
+
+    40% {
+        color: yellow;
+    }
+
+    60% {
+        color: green;
+    }
+
+    80% {
+        color: blue;
+    }
+
+    100% {
+        color: violet;
+    }
+}
+
+@media(max-width:768px) {
+    .container #search-box {
+        width: 100%;
+    }
+}
+
+@media(max-width:450px) {
+    .container {
+        padding: 25px 20px;
+    }
+
+    .container .image-container .image {
+        width: 100%;
+    }
+}
